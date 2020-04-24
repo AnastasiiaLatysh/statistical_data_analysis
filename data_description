@@ -1,0 +1,37 @@
+Format (Формат)
+A data frame with 5226 observations on the following 8 variables.
+(Кадр із 5226 спостереженнями за наступними 8 змінними.)
+
+released (звільнений)
+Whether or not the arrestee was released with a summons; a factor with levels: No; Yes.
+(Чи був звільнений арештований з повісткою; фактор із значеннями: Ні; Так.)
+
+colour (колір шкіри)
+The arrestee's skin color; a factor with levels: Black; White.
+(Колір шкіри затриманого; фактор із значеннями: Чорна; Біла)
+
+year (рік)
+2015 through 2019; a numeric vector.
+(2015 по 2019 рік; числовий вектор)
+
+age (вік)
+in years; a numeric vector.
+(у роках; числовий вектор.)
+
+sex (стать)
+a factor with levels: Female; Male.
+(фактор із значеннями: Жінка; Чоловік.)
+
+employed (працевлаштований)
+a factor with levels: No; Yes.
+(фактор із значеннями: Ні; Так.)
+
+citizen (громадянин)
+a factor with levels: No; Yes.
+(фактор із значеннями: Ні; Так.)
+
+checks
+Number of police data bases (of previous arrests, previous convictions, parole status, etc. – 6 in all)
+on which the arrestee's name appeared; a numeric vector
+(Кількість баз даних міліції (попередніх арештів, попередніх засуджень, статусу умовно-дострокового звільнення тощо),
+на якому фігурувало ім'я затриманого; числовий вектор)
