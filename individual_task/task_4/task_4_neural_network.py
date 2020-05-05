@@ -1,7 +1,5 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
-from matplotlib import pyplot
-from statsmodels.graphics.tsaplots import plot_pacf, plot_acf
 from sklearn import metrics
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
@@ -22,7 +20,3 @@ print(cnf_matrix)
 print("Accuracy:", metrics.accuracy_score(y_test, y_pred))
 print("Precision:", metrics.precision_score(y_test, y_pred))
 print("Recall:", metrics.recall_score(y_test, y_pred))
-plot_pacf(y_pred, lags=50)
-pyplot.savefig('pacf_nn')
-plot_acf(y_pred, lags=50)
-pyplot.savefig('akf_nn')

@@ -3,16 +3,17 @@
 import pandas as pd
 
 # 1. Просте усереднення
-arrest_data = pd.read_csv(
-    '/home/alaty/PycharmProjects/statistical_data_analysis/Arrests_for_Drugs_Possession_with_missing_data.csv')
-print(arrest_data.head(6))
-arrest_data.fillna(round(arrest_data['age'].mean()), inplace=True)
-print(arrest_data.head(6))
+from individual_task.const import PATH_TO_DATA_SET_WITH_MISSING_DATA
 
+arrest_data = pd.read_csv(PATH_TO_DATA_SET_WITH_MISSING_DATA)
+print(f"Дані перед використанням методу простого усереднення: \n: {arrest_data.head(6)}")
+arrest_data.fillna(round(arrest_data['age'].mean()), inplace=True)
+print(f"Дані після використанням методу простого усереднення: \n: {arrest_data.head(6)}")
+
+print("\n\n\n")
 
 # 2. Інтерполяція
-arrest_data = pd.read_csv(
-    '/home/alaty/PycharmProjects/statistical_data_analysis/Arrests_for_Drugs_Possession_with_missing_data.csv')
-print(arrest_data.head(6))
-arrest_data_without_missing_values = arrest_data.interpolate(method='linear', limit_direction='both')
-print(arrest_data_without_missing_values.head(6))
+arrest_data = pd.read_csv(PATH_TO_DATA_SET_WITH_MISSING_DATA)
+print(f"Дані перед використанням інтерполяції: \n: {arrest_data.head(6)}")
+arrest_data_without_missing_values = arrest_data.interpolate(method='linear', limit_direction='both', inplace=True)
+print(f"Дані після використання інтерполяції: \n: {arrest_data.head(6)}")

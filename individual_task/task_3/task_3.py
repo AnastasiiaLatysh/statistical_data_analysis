@@ -6,7 +6,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-arrest_data = pd.read_csv('/home/alaty/PycharmProjects/statistical_data_analysis/Arrests_for_Drugs_Possession.csv')
+from individual_task.const import PATH_TO_DATA_SET
+
+arrest_data = pd.read_csv(PATH_TO_DATA_SET)
 
 # Now, we will be splitting the following data into labels and features. Labels are the data which we want to predict
 # and features are the data which are used to predict labels. Here, we have used age as the label for

@@ -3,7 +3,9 @@
 import pandas as pd
 import plotly.express as px
 
-arrest_data = pd.read_csv('/home/alaty/PycharmProjects/statistical_data_analysis/Arrests_for_Drugs_Possession.csv')
+from individual_task.const import PATH_TO_DATA_SET
+
+arrest_data = pd.read_csv(PATH_TO_DATA_SET)
 
 
 # 1. Графік та гістограмма розподілу взаємозв'язку між віком людіні, що зберігає наркотичні засоби,

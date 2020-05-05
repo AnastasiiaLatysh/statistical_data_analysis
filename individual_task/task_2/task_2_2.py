@@ -3,7 +3,9 @@
 
 import pandas as pd
 
-arrest_data = pd.read_csv('/home/alaty/PycharmProjects/statistical_data_analysis/Arrests_for_Drugs_Possession.csv')
+from individual_task.const import PATH_TO_DATA_SET
+
+arrest_data = pd.read_csv(PATH_TO_DATA_SET)
 
 # 1. Mode (мода)
 age_mode = arrest_data['age'].mode()[0]
